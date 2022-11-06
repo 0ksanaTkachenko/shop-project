@@ -7,6 +7,23 @@ body {
     background-image: url(images/patt.png);
 }
 
+/* common selectors */
+
+.color-w {
+    color: #ffffff;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+[class*="col-"] {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* header */
+
 .container {
     width: 1200px;
     margin: 0 auto;
@@ -31,12 +48,8 @@ body {
     max-width: 50%;
 }
 
-[class*="col-"] {
-    padding-left: 15px;
-    padding-right: 15px;
-}
-
-.header {
+.header,
+footer {
     height: 100px;
     display: flex;
     align-items: center; 
@@ -50,6 +63,8 @@ body {
 .logo a {
     display: inline-block;
 }
+
+/* menu */
 
 .menu {
     display: flex;
@@ -89,16 +104,67 @@ li:hover > a {
     position: relative;
     background-image: url(images/arrow.png);
     background-repeat: no-repeat;
-    background-size: 8px 6px;
+    background-size: 8px 6px; 
     background-position: 120px 25px;
 }
 
-.menu > .products > a:hover {
+.products a:hover { 
     background-image: url(images/arrow-white.png);
     background-repeat: no-repeat;
     background-size: 8px 6px;
     background-position: 120px 25px;
 }
+
+.products:hover > a {
+    background-image: url(images/arrow-white.png);
+    background-repeat: no-repeat;
+    background-size: 8px 6px;
+    background-position: 120px 25px;
+}
+
+/* sub-menu */
+
+.sub-menu {
+    position: absolute;
+    display: none;
+    width: 200%;
+    left: -1px;
+    z-index: 1;
+}
+
+.sub-menu li {
+    width: 100%;
+    background-color: #2c71b8;
+}
+
+.sub-menu a {
+    color: white;
+    display: block;
+    height: 41px;
+    text-decoration: none;
+    line-height: 41px;
+    font-size: 21px;
+    padding-left: 28px;
+}
+
+.sub-menu li:last-child {
+    padding-bottom: 25px;
+}
+
+.sub-menu li:first-child {
+    padding-top: 25px;
+}
+
+.sub-menu a:hover {
+    color: #2c71b8;
+    background-color: white;  
+}
+
+.menu > li:hover .sub-menu {
+    display: block;
+}
+
+/* search */
 
 .search {
     width: 200px;
@@ -139,6 +205,8 @@ li:hover > a {
     padding: 0;
 }
 
+/* basket */
+
 .basket {
     position: relative; 
     margin-top: 6px;
@@ -162,47 +230,249 @@ li:hover > a {
     position: absolute;
     top: -11px;
     left: -11px;
-    color: #ffffff;
     font-size: 12px;
     text-align: center;
     line-height: 20px;
 }
 
-.sub-menu {
-    position: absolute;
-    display: none;
-    width: 200%;
-    left: -1px;
+/* main */
+/* slider */
+
+.slider-container {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid white;
+    height: 395px;
+    line-height: 395px;
 }
 
-.sub-menu li {
-    width: 100%;
+.slider {
+    font-size: 100px;
+    text-align: center;
+}
+
+/* options */
+
+.options-container {
+    background-color: rgba(255, 255, 255, 0.2);
+    border-right: 1px solid white;
+    height: 850px;
+    color: #ffffff;
+}
+
+.options {
+    padding-top: 30px;
+}
+
+/* items-header */
+
+.col-9 {
+    flex: 0 0 75%;
+    max-width: 75%;
+}
+
+.sect-col-9{
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.way {
+    height: 70px;
+    line-height: 70px;
+}
+
+.way,
+.way a {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+    font-weight: lighter;
+}
+
+.device-filter {
+    height: 97px;
+}
+
+.sect-col-6 {
+    flex: 0 0 66.66666%;
+    max-width: 66.66666%;
+}
+
+.header-i-name {
+    font-size: 48px;
+}
+
+.sect-col-3 {
+    flex: 0 0 33.33333%;
+    max-width: 33.33333%;
+}
+
+.select {
+    font-size: 21px;
+    font-weight: lighter;
+    width: 270px;
+    height: 38px;
+    background-color: #2c71b8;
+    border: 1px solid white;
+    padding: 0px 30px 0px 20px;
+    outline: none;
+    cursor: pointer;
+}
+
+/* items-filling */
+
+.img-container {
+    background-color: rgba(255, 255, 255, 0.75);
+    text-align: center;
+    position: relative;
+}
+
+.img-item {
+    height: 90px;
+    margin: 45px 0px;
+}
+
+.img-buttons button {
+    width: 30px;
+    height: 30px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #2c71b8;
+    padding: 0;
+    position: absolute;
+}
+
+.increase {
+    top: 10px;
+    right: 10px;
+    background: transparent;
+    background-image: url(images/square.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.increase:hover {
+    background-image: url(images/square-white.png);
     background-color: #2c71b8;
 }
 
-.sub-menu a {
-    color: white;
-    display: block;
-    height: 41px;
-    text-decoration: none;
-    line-height: 41px;
+.like {
+    top: 50px;
+    right: 10px;
+    background: transparent;
+    background-image: url(images/like.png);
+    background-position: center 6px;
+    background-repeat: no-repeat;
+}
+
+.like:hover {
+    background-image: url(images/like-white.png);
+    background-color: #2c71b8;
+}
+
+.item-descr-container {
+    background-color: rgba(44, 113, 184, 0.75);
+}
+
+.dev-descr-container {
+    border: 1px solid white;
+    margin-bottom: 30px;
+}
+
+.device-name {
+    font-size: 30px;
+    padding: 15px 0px 19px;
+}
+
+.device-descr {
     font-size: 21px;
-    padding-left: 28px;
 }
 
-.sub-menu li:last-child {
-    padding-bottom: 25px;
+.device-feature {
+    padding-top: 16px;
+    margin-bottom: -20px;
+    font-size: 21px;
 }
 
-.sub-menu li:first-child {
-    padding-top: 25px;
+.device-feature div {
+    padding-bottom: 20px;
 }
 
-.sub-menu a:hover {
-    color: #2c71b8;
-    background-color: white;  
+.device-feature span {
+    font-weight: bold;
 }
 
-.menu > li:hover .sub-menu {
+.device-footer {
+    text-align: center;
+    padding-bottom: 15px;
+}
+
+.price {
+    padding: 30px 0px 25px;
+    display: flex;
+    justify-content: center;
+}
+
+.price div {
+    font-size: 48px;
+    padding-right: 10px;
+}
+
+.price span {
+    font-size: 21px;
+}
+
+.more-details {
+    background-color: #2c71b8;
+    border: 1px solid white;
+    width: 208px;
+    margin: 0 auto;
+}
+
+.more-details a {
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 21px;
+    color: #ffffff;
     display: block;
+    height: 48px;
+    line-height: 48px;
+    text-transform: uppercase;
+}
+
+.cart-add {
+    background-color: rgba(255, 255, 255, 0.20);
+    height: 48px;
+    width: 208px;
+    border: none;
+    font-size: 21px;
+    padding: 0px 30px 0px 0px;
+    margin: 15px 0px;
+    background-image: url(images/basket-white.png);
+    background-repeat: no-repeat;
+    background-size: 15px 17px;
+    background-position: 174px center;
+}
+
+.load-more {
+    font-size: 36px;
+}
+
+.load-more {
+    text-align: center;
+}
+
+/* footer */
+
+.footer {
+    margin-top: 90px;
+}
+
+.col-12 {
+    flex: 0 0 100%;
+    max-width: 100%;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 21px;
+    color: #2c71b8;
 }
