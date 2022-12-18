@@ -294,7 +294,7 @@ li:hover > a {
 }
 
 .slick-prev:before {
-    content: url(images/image.png);
+    content: url(images/before_arrow.svg);
 }
 
 /* options */
