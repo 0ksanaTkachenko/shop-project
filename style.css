@@ -431,9 +431,14 @@ input[type="checkbox"] {
     padding: 0px 30px 0px 20px;
     outline: none;
     cursor: pointer;
+    
 }
 
 /* items-filling */
+
+.product-quantity {
+    padding-bottom: 15px;
+}
 
 .img-container {
     background-color: rgba(255, 255, 255, 0.75);
@@ -649,4 +654,6 @@ input[type="checkbox"] {
 .hide {
     display: none;
 }
+
+
 
