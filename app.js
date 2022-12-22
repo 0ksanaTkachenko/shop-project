@@ -115,18 +115,12 @@ function Counter(incrementBtn, decrementBtn, inputField) {
     this.decrement.bind(this)
   );
 }
-
-//  Варiант 1
-// let counter = new Counter(incrementBtns[0], decrementBtns[0], inputFields[0]);
-// let counter = new Counter(incrementBtns[1], decrementBtns[2], inputFields[3]);
-// й так для всiх товарiв
-
-// Варiант 2
-
-for (i = 0; i <= decrementBtns.length; i++) {
-  let decrementBtn = decrementBtns[i];
-  let incrementBtn = incrementBtns[i];
-  let inputField = inputFields[i];
-
-  new Counter(incrementBtn, decrementBtn, inputField);
-}
+let counter0 = new Counter(incrementBtns[0], decrementBtns[0], inputFields[0]);
+let counter1 = new Counter(incrementBtns[1], decrementBtns[1], inputFields[1]);
+let counter2 = new Counter(incrementBtns[2], decrementBtns[2], inputFields[2]);
+let counter3 = new Counter(incrementBtns[3], decrementBtns[3], inputFields[3]);
+let counter4 = new Counter(incrementBtns[4], decrementBtns[4], inputFields[4]);
+let counter5 = new Counter(incrementBtns[5], decrementBtns[5], inputFields[5]);
+let counter6 = new Counter(incrementBtns[6], decrementBtns[6], inputFields[6]);
+let counter7 = new Counter(incrementBtns[7], decrementBtns[7], inputFields[7]);
+let counter8 = new Counter(incrementBtns[8], decrementBtns[8], inputFields[8]);
