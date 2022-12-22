@@ -124,3 +124,11 @@ let counter5 = new Counter(incrementBtns[5], decrementBtns[5], inputFields[5]);
 let counter6 = new Counter(incrementBtns[6], decrementBtns[6], inputFields[6]);
 let counter7 = new Counter(incrementBtns[7], decrementBtns[7], inputFields[7]);
 let counter8 = new Counter(incrementBtns[8], decrementBtns[8], inputFields[8]);
+
+//  for (i = 0; i <= decrementBtns.length; i++) {
+//    let decrementBtn = decrementBtns[i];
+//    let incrementBtn = incrementBtns[i];
+//    let inputField = inputFields[i];
+
+//    let counter = new Counter(incrementBtn, decrementBtn, inputField);
+//  }
